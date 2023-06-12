@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         timerOn_Alarm();
 
         timerOn_Battery();
-
+        SensorsManager sensorsManager = new SensorsManager(MainActivity.this, this);
 
         Button buttonHA = (Button) findViewById(R.id.webinterfaceHA);
         buttonHA.setOnClickListener(new View.OnClickListener() {
